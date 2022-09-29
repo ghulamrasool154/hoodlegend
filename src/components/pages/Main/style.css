@@ -16,8 +16,6 @@ a {
 
 body {
   font-family: "Exo 2", sans-serif;
-
-  font-size: 0;
   text-align: center;
   background-color: #111423;
 }
@@ -1124,9 +1122,10 @@ a.section6item.gr--sec6item {
     padding: 10px;
   }
   .section5legendItem {
-    margin: 0;
-    width: 100%;
-    margin: 10px 0;
+    /* margin: 0; */
+    /* width: 100%; */
+    margin: 10px;
+    display: inline-block;
   }
   .section1ContentTitle {
     font-size: 45px;
@@ -1329,6 +1328,10 @@ a.section6item.gr--sec6item {
 }
 
 @media screen and (max-width: 500px) {
+  .section5legendItem{
+    width: 100%;
+    margin: 10px 0;
+  }
   .teamOverlayModal {
     padding: 30px;
   }
@@ -1368,7 +1371,9 @@ a.section6item.gr--sec6item {
   }
   .section2video {
     height: 250px;
-  }
+    margin: 30px 0px;
+    margin-bottom: 12px;
+}
   .section1ContentHint {
     font-size: 16px;
   }
@@ -1381,6 +1386,8 @@ a.section6item.gr--sec6item {
   .section5legend {
     margin-top: 0;
   }
+
+ 
 }
 
 @media screen and (max-width: 490px) {
@@ -1389,6 +1396,9 @@ a.section6item.gr--sec6item {
   }
   .section1Content {
     vertical-align: top;
+  }
+   .ytp-large-play-button{
+    width: 50px !important;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1399,4 +1409,7 @@ a.section6item.gr--sec6item {
   .section1image {
     height: 510px;
   }
+  .section1ContentSwitcherItem {
+    font-size: 13px;
+}
 }
