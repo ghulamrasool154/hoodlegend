@@ -2,11 +2,19 @@ import React from "react";
 import metamask from "../../pages/Main/images/matamask.png";
 import walletcollect from "../../pages/Main/images/walletconnect.png";
 import "./ProviderPopup.css";
-const ProviderPopup = () => {
+const ProviderPopup = ({ hanldeProvider }) => {
   return (
     <>
+      {/* "react-router-dom": "^5.2.0", */}
+      <div className="ProviderPopup---option--overlay"></div>
       <div className="ProviderPopup---option">
         <div className="ProviderPopup">
+          <span
+            className="icon--close--sidebar"
+            onClick={() => hanldeProvider()}
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </span>
           <h3 className="provider--title">Select your provider</h3>
           <div className="provider--companies">
             <div className="pro--comp--left">

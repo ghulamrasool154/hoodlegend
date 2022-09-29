@@ -1,24 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-
-
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 //Pages
-import Main from './components/pages/Main'
-
-
+import Main from "./components/pages/Main";
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <BrowserRouter>
-  //     <Switch>
-  //       <Route exact path='/' component={Main} />
-  //     </Switch>
-  //   </BrowserRouter>
-  // </React.StrictMode>,
-  <Main />,
-  document.getElementById('root')
+  <BrowserRouter>
+    <React.StrictMode>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="abc" element={<h1>helo unk</h1>} />
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>,
+  // <Main />,
+  document.getElementById("root")
 );
-
-
-

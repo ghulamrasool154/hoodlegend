@@ -4,14 +4,19 @@ import clock from "../../pages/Main/images/icon_legend.png";
 import downarrow from "../../pages/Main/images/icon_arrow.png";
 import binance from "../../pages/Main/images/binance.png";
 import ProviderPopup from "../Provider/ProviderPopup";
-const JoinSale = () => {
+const JoinSale = ({ JoinSalePop, handlepreseed }) => {
   const [provideShow, setProvidShow] = useState(false);
   const hanldeProvider = () => {
     setProvidShow(!provideShow);
   };
+
   return (
     <>
       {provideShow ? <ProviderPopup hanldeProvider={hanldeProvider} /> : null}
+      <div
+        className="join--sale--overlay"
+        onClick={() => handlepreseed()}
+      ></div>
       <section className="join_sale">
         <div className="main_join_sale_wrapper">
           <div className="top_join">

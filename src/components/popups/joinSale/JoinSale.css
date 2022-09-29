@@ -1,3 +1,24 @@
+
+/* section.join_sale {
+    background: #1a282c59;
+    inset: 0;
+    position: fixed;
+    z-index: 11111111;
+    filter: blur(1px);
+} */
+
+.join--sale--overlay {
+    background: #080a0aba;
+    inset: 0;
+    position: fixed;
+    z-index: 11111111;
+    filter: blur(1px);
+}
+section.join_sale {
+    position: relative;
+    z-index: 11111111;
+}
+
 .main_join_sale_wrapper {
     position: fixed;
     top: 50px;

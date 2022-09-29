@@ -146,7 +146,7 @@ export default function Main() {
   };
 
   const handlepreseed = () => {
-    setJoinSalePop(true);
+    setJoinSalePop(!JoinSalePop);
   };
 
   const classFooter =
@@ -155,9 +155,10 @@ export default function Main() {
       : "section6item ";
   return (
     <>
-      {JoinSalePop ? <JoinSale /> : null}
+      {JoinSalePop ? (
+        <JoinSale handlepreseed={handlepreseed} JoinSalePop={JoinSalePop} />
+      ) : null}
 
-     
       <React.Fragment>
         {showModal ? (
           <React.Fragment>
